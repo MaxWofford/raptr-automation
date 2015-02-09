@@ -23,5 +23,5 @@ end
 driver.navigate.to 'http://raptr.com/login'
 sign_in(driver)
 driver.navigate.to 'http://raptr.com/community'
-puts driver.title
+IO.binwrite("bot-log.txt","#{driver.title}:#{Time.now}")
 driver.quit
