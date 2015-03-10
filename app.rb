@@ -21,5 +21,7 @@ puts 'signed in'
 sleep(1)
 puts 'heading to community page'
 driver.navigate.to 'http://raptr.com/community'
-IO.binwrite("bot-log.txt","#{driver.title}:#{Time.now}")
+open('bot-log.txt', 'a') do |f|
+  f << "#{driver.title}:#{Time.now}"
+end
 driver.quit
