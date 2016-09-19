@@ -1,6 +1,8 @@
 # Raptr automation
-This was built to learn selenium. It someone wants to make this better by building it with nokogiri, be my guest.
-### Install && Run
+
+This script signs into raptr.com for daily login rewards.
+
+## Install && Run
 
 ```
 # config.rb
@@ -12,7 +14,7 @@ R_PASSWORD = 'every_time_you_commit_a_key_and_orphan_puppy_gets_kicked_into_the_
 bundle install && ruby app.rb
 ```
 
-### Options
+## Options
 ```bash
 # runs in phantom by default
 --firefox # firefox
